@@ -1,0 +1,154 @@
+
+.main {
+    background: inherit;
+    position: relative;
+    height: 800px;
+    padding-top: 170px;
+    &-title {
+        font-size: 52px;
+        font-weight: 800;
+    }
+    &-description {
+        margin-top: 13px;
+        font-size: 18px;
+        font-weight: 400;
+        width: 40%;
+
+    }
+    &-button{
+        margin-top: 22px;
+        fill: linear-gradient(99deg, #FFB1A4 -5.48%, #FF5F4E 79.15%);
+        box-shadow: 4px -5px 0px 0px rgba(255, 204, 191, 0.68) inset;
+        z-index: 10;
+    }
+    &-end {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: 5;
+
+    }
+    &__fruits {
+        &-desktop{
+            position: absolute;
+            right: 0;
+            top: 141px;
+            z-index: 2;
+            width: 57%;
+        }
+        &-container-2{
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            top: 221px;
+            right: 608px;
+            border-radius: 100%;
+            border: 1px solid #000;
+            z-index: 5;
+            float: right;
+        }
+        &-container-1{
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            top: 223px;
+            right: 688px;
+            border-radius: 100%;
+            border: 1px solid #000;
+            z-index: 5;
+            float: left;
+        }
+        &-eye-1 {
+            position: absolute;
+            left: 30px;
+            bottom:5px
+        }
+        
+    }
+    &__element {
+        &-grass{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+        &-left {
+            &-tree {
+                position: absolute;
+                top: 243px;
+                width: 15%;
+                animation: tree-left 2s cubic-bezier(.46,.03,.52,.96) 0s infinite alternate;
+                transform-origin: 50% 100%
+            }
+            &-cloud {
+                position: absolute;
+                top:-70px;
+                left: 0;
+                z-index: -2;
+                animation-name: cloud-left;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+        }
+        &-right{
+            &-tree {
+                position: absolute;
+                right: 0;
+                top: 74px;
+                transform-origin: 50% 100%;
+                animation: tree-right 5s cubic-bezier(.46,.03,.52,.96) 0s infinite alternate;
+
+            }
+            &-cloud {
+                position: absolute;
+                right: 10px;
+                top:-50px;
+                z-index: -2;
+                animation-name: cloud-right;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+        }
+    }
+}
+
+@keyframes cloud-left{
+
+    0%{
+    left: 0%;
+    }
+    100%{
+    left: 3%;
+    }
+    }
+    
+@keyframes cloud-right{
+
+    0%{
+    right: 0%;
+    }
+    100%{
+    right: 3%;
+    }
+    }
+
+@keyframes tree-left {
+    0% { 
+        transform: rotate(1deg); 
+    }
+    100% { 
+        transform: rotate(-1deg); 
+    }
+}
+
+@keyframes tree-right {
+    0% { 
+        transform: rotate(1deg); 
+    }
+    100% { 
+        transform: rotate(-1deg); 
+    }
+}
