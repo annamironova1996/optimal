@@ -1,0 +1,13 @@
+.button {
+    position: relative;
+    &-text{
+        position: absolute;
+        top: 9px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        font-size: 24px;
+        font-weight: 800;
+        color:#fff;
+    }
+}

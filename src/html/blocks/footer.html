@@ -1,5 +1,43 @@
 <footer class="footer">
 	<div class="container">
-		<h2>Footer</h2>
+		<h2 class="visually-hidden">Контакты</h2>
+		<div class="footer__form">
+			<p class="footer__form-title">Связаться с нами</p>
+			<ul class="footer__form-list">
+			<li class="footer__form-item">
+				<label for="user-name" class="visually-hidden">Имя</label>
+				<input class="footer__form-input" id="user-name" placeholder="Имя">
+			</li>
+			<li class="footer__form-item">
+				<label for="user-phone" type="text" class="visually-hidden">Телефон</label>
+				<input class="footer__form-input" id="user-phone" type="text" placeholder="Телефон" >
+			</li>
+			
+			</ul>
+			<button class="button footer__form-button"><img src="./../img/button.svg"><p class="button-text">Отправить</p></button>
+		</div>
+		<p class="footer-warning">Не является лекарственным средством</p>
+		<hr class="footer-warning-border" />
+		<div class="footer__contacts">
+			<div class="footer__contacts-item">
+				<h3 class="footer__contacts-item-title">Производитель</h3>
+				<p class="footer__contacts-item-description"><i>ООО «ЭНЕРГИЯ ДВИЖЕНИЯ» </i>
+					443080, Самарская обл., г. Самара, 
+					пр-кт Карла Маркса, д. 190, оф. 507</p>
+			</div>
+			<div class="footer__contacts-item">
+				<h3 class="footer__contacts-item-title">Контакты</h3>
+				<p class="footer__contacts-item-description">8 (846) 225-32-02 <i>zakaz@optimeal.pro
+					www.optimeal.pro</i></p>
+			</div>
+			<div class="footer__contacts-social">
+				@@include('./social-icons.html')
+				<img class="footer__contacts-social-logo" src="./../img/footer-logo.svg" alt="логотип">
+			</div>
+		</div>
+		
 	</div>
+	<img class="footer-fish-yellow" src="./../img/yellow-fish.svg" alt="желтая рыбка">
+	<img class="footer-fish-orrange" src="./../img/orrange-fish.svg" alt="оранжевая рыбка">
+	<img class="footer-bubbles" src="./../img/bubbles.svg" alt="пузыри">
 </footer>

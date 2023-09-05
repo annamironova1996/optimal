@@ -1,11 +1,16 @@
 .new {
     position: relative;
-    background-color: #FFF6EE;
+    background: var(--grad-plate, linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 94.22%), #FFF6EE);
     color: #D07CC6;
     min-height: 1000px;
     padding-top: 200px;
     padding-bottom: 98px;
     text-align: center;
+    &-back-down{
+        position: absolute;
+        bottom:-100px;
+        left:0;
+    }
     
     &-background {
         position: absolute;

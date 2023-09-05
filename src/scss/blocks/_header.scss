@@ -10,7 +10,6 @@
 		align-items: center;
 	}
 	&__nav {
-		
 		&-wrapper {	
 			display: flex;
 			flex-direction: row;
@@ -27,30 +26,7 @@
 			border: 2px solid var(--White, #FFF);
 		}
 	}
-	&__social{
-		display: flex;
-		column-gap: 30px;
-		&-icon{
-			position: relative;
-			cursor: pointer;
-		}
-		&-icon::after{
-				content: '';
-				display: block;
-				width: 100%;
-				height: 100%;
-				border-radius: 100%;
-				position: absolute;
-				left: 0;
-				top: 0;
-				transition: 250ms background-color;
-		}
-		&-icon:hover {
-				&:after {
-				  background-color: rgba(#fff, .2);
-				  border-radius: 100%;
-				}
-		}
+	
 	}
 
-}
+

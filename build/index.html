@@ -25,11 +25,11 @@
                     <li class="header__nav-item"><a class="header__nav-link">Контакты</a></li>
                 </ul>
               </nav>
-              <ul class="header__social">
-                <li class="header__social-icon"><a class="header__social-link" href="https://www.instagram.com/"><img class="header__social-img" src="./../img/icons/instagramm.svg" alt="инстаграм"></a></li>
-                <li class="header__social-icon"><a class="header__social-link" href="https://vk.com/"><img class="header__social-img" src="./../img/icons/vk.svg" alt="вконтакте"></a></li>
-                <li class="header__social-icon"><a class="header__social-link" href="https://www.whatsapp.com/"><img class="header__social-img" src="./../img/icons/whatsapp.svg" alt="what`s app"></a></li>
-              </ul>
+              <ul class="social-icons">
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://www.instagram.com/"><img class="social-icons-img" src="./../img/icons/instagramm.svg" alt="инстаграм"></a></li>
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://vk.com/"><img class="social-icons-img" src="./../img/icons/vk.svg" alt="вконтакте"></a></li>
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://www.whatsapp.com/"><img class="social-icons-img" src="./../img/icons/whatsapp.svg" alt="what`s app"></a></li>
+  </ul>
         </div>
     </div>
 </header>
@@ -41,7 +41,10 @@
         России в области специализированного детского питания. Миссия компании - заботиться о здоровье Ваших детей, создавая 
         только эффективные и удобные формы витаминов и пищевых добавок.
         </p>
-        <button class="main-button"></button>
+        <button class="button">
+            <img class="button-img" src="./../img/button.svg" alt="кнопка">
+            <span class="button-text">Подробнее</span>
+        </button>
         <img class="main-end" src="./../img/main-end.svg" alt="">
     </div>
     <div class="main__fruits">
@@ -89,17 +92,290 @@
                 </div>  
             </div>
         </div>
+        <img class="new-back-down" src="./../img/new-back-down.svg" alt="">
     </div>
 </section>
-			<section class="">
-    <h2>Продукты компании OptiMeal Kids</h2>
+			<section class="products">
+    <div class="container">
+        <h2 class="visually-hidden">Продукты компании OptiMeal Kids</h2>
+        <div class="products-wrapper">
+            <button class="products__item">
+                <img class="products__item-banana" src="./../img/banana.svg" alt="банан">
+                <img class="products__item-img" src="./../img/product-1.png" alt="Витамины с кальцием">
+                <p class="products__item-title">Крепкие кости</p>
+            </button>
+            <button class="products__item">
+                <img class="products__item-banana" src="./../img/banana.svg" alt="банан">
+                <img class="products__item-img" src="./../img/product-2.png" alt="Комплекс витаминов">
+                <p class="products__item-title">Комплекс витаминов</p>
+            </button>
+            <button class="products__item">
+                <img class="products__item-banana" src="./../img/banana.svg" alt="банан">
+                <img class="products__item-img" src="./../img/product-3.png" alt="Витамины Д3">
+                <p class="products__item-title">Рост и развитие</p>
+            </button>
+            <button class="products__item">
+                <img class="products__item-banana" src="./../img/banana.svg" alt="банан">
+                <img class="products__item-img" style="width: 62%" src="./../img/product-4.png" alt="Витамины Омега3">
+                <p class="products__item-title">Зрение, память, внимательность</p>
+            </button>
+        </div>
+        <div class="products-cards">
+            <div class="products__card">
+                <img class="products__card-background" src="./../img/product-card.svg" alt="карточка">
+                <img class="products__card-cloud-2" src="./../img/cloud-2.svg" alt="">
+                <img class="products__card-cloud-1" src="./../img/cloud-1.svg" alt="">
+                <img class="products__card-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
+                <div class="products__card-wrapper">
+                    <h2 class="products__card-title">My <span class="products__card-title products__card-title_red">#1st</span> Vitamins</h2>
+                    <div class="products__card-buttons">
+                        <button class="products__card-description-button">Описание продукта</button>
+                        <button class="products__card-properties-button">Свойства</button>
+                    </div>
+                    <div class="products__card-description">
+                        <p class="products__card-description-form"><b>Форма выпуска:</b> мармеладные пастилки массой 3,4 г.</p>
+                        <p class="products__card-description-recommendations"><b>Рекомендации по применению:</b> детям старше 3х лет по 1 мармеладной
+                        пастилке 1 раз в день.
+                        </p>
+                        <ul class="products__card-description-list">
+                            <li class="products__card-description-item">Для детей и родителей</li>
+                            <li class="products__card-description-item">Вкусы на основе соков</li>
+                            <li class="products__card-description-item">Без искусственных красителей</li>
+                            <li class="products__card-description-item">Месячный курс</li>
+                        </ul>
+                    </div>
+                    <div class="products__card-properties">
+                        <p class="products__card-properties-specification">Биологические функции Витамина D3. Согласно многочисленным исследованиям, витамин D3 положительно влияет на целый ряд функций организма, среди которых необходимо выделить:
+                        иммуномодулирующее действие, Укрепление костной ткани, Модуляция клеточного роста Улучшение способности к обучению.</p>
+                        <div class="products__card-properties-offer">
+                            <b class="products__card-properties-offer-1">12+1</b>
+                            <p class="products__card-properties-offer-2">мультивитаминный
+                            комплекс</p>
+                        </div>
+                        <p class="products__card-properties-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
+                    </div>
+                    <button class="button">
+                        <img class="button-img" src="./../img/button.svg" alt="кнопка">
+                        <span class="button-text">Где купить?</span>
+                    </button>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+    </div>
 
 </section>
+			<section class="recommendations">
+    <div class="container">
+        
+            <fieldset style="display: none;" class="recommendations__test">
+                    <legend class="recommendations__test-title">Пройдите тест и узнайте, что необходимо вашему ребенку</legend>
+                        <ul class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №1:<br/>
+                                В каком регионе Вы живете?
+                                </p>
+                            <li class="recommendations__test-answer" >
+                                <input class="recommendations__test-answer-input" type="radio" name="location" value="south" id="south">
+                                <label class="recommendations__test-answer-label" for="south">Мы живем на юге, ребенок часто гуляет</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="location" value="miscellaneous" id="miscellaneous">
+                                <label class="recommendations__test-answer-label" for="miscellaneous">Мы живем на севере или в центральной части России, но бываем на юге летом. Гулять ходим каждый день</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="location" value="north" id="north">
+                                <label class="recommendations__test-answer-label" for="north">Живем в северной части страны, ребенок гуляет редко</label>
+                            </li>
+                        </ul>
+                        <ul style="display: none;" class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №2:<br/>
+                                У ребенка есть проблемы с зубами или костями?
+                                </p>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="problems" value="healthy" id="healthy">
+                                <label class="recommendations__test-answer-label" for="healthy">Нет и никогда не было
+                                </label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="problems" value="caries" id="caries">
+                                <label class="recommendations__test-answer-label" for="caries">Есть кариес или ломал конечности</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="problems" value="actively" id="actively">
+                                <label class="recommendations__test-answer-label" for="actively">Проблем нет, но ребенок активно растет</label>
+                            </li>
+                        </ul>
+                        <ul style="display: none;" class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №3:<br/>
+                                Ваш ребенок получает достаточное количество питательных веществ и микронутриентов?
+                                </p>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="nutrition" value="great" id="great">
+                                <label class="recommendations__test-answer-label" for="great">Да, всегда регулярно питается, в каждом приеме есть овощи и фрукты
+
+                                </label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="nutrition" value="badly" id="badly">
+                                <label class="recommendations__test-answer-label" for="badly">Нет, ест плохо, не успевает или не хочет</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="nutrition" value="medium" id="medium">
+                                <label class="recommendations__test-answer-label" for="medium">Питается хорошо, но в рационе не хватает овощей, фруктов или рыбы</label>
+                            </li>
+                        </ul>
+                        <ul style="display: none;" class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №4:<br/>
+                                Вашего ребенка можно назвать усидчивым?
+                                </p>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="perseverance" value="plodding" id="plodding">
+                                <label class="recommendations__test-answer-label"  for="plodding">Да, ребенок хорошо учится и запоминает
+
+                                </label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="perseverance" value="restless" id="restless">
+                                <label class="recommendations__test-answer-label"  for="restless">Не совсем, постоянно отвлекается и не доводит дело до конца</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="perseverance" value="interesting" id="interesting">
+                                <label class="recommendations__test-answer-label"  for="interesting">Ребенок может долго делать только то, что интересно ему</label>
+                            </li>
+                        </ul>
+                        <ul style="display: none;" class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №5:<br/>
+                                Чем обычно занимается ребенок после школы?
+                                </p>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="extracurricula" value="athlete" id="athlete">
+                                <label class="recommendations__test-answer-label" for="athlete">Ходит на несколько кружков или активно занимается спортом
+                                </label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="extracurricula" value="nothing" id="nothing">
+                                <label class="recommendations__test-answer-label" for="nothing">Ничем не занимается, потому что сильно устает</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="extracurricula" value="computer" id="computer">
+                                <label class="recommendations__test-answer-label" for="computer">Обычно проводит время в телефоне, планшете или компьютере</label>
+                            </li>
+                        </ul>
+                        <ul style="display: none;" class="recommendations__test-item">
+                            <p class="recommendations__test-question">Вопрос №6:<br/>
+                                Когда последний раз болел Ваш ребенок?
+                                </p>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="sick" value="rarely" id="rarely">
+                                <label class="recommendations__test-answer-label" for="rarely">Не помню, кажется, несколько лет назад
+                                </label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="sick" value="often" id="often">
+                                <label class="recommendations__test-answer-label" for="often">Часто</label>
+                            </li>
+                            <li class="recommendations__test-answer">
+                                <input class="recommendations__test-answer-input" type="radio" name="sick" value="pair" id="pair">
+                                <label class="recommendations__test-answer-label" for="pair">1-2 раза в год</label>
+                            </li>
+                        </ul>
+                        <button type="submit">Следующий вопрос</button>
+                </fieldset>
+                <ul class="recommendations__text">
+                    <h2 class="recommendations__text-title">OptiMeal Kids рекомендует</h2>
+                    <li class="recommendations__text-wrapper">
+                        <h3 class="recommendations__text-subtitle">My #1st Vita D3</h3>
+                        <p class="recommendations__text-description">D3 просто необходим детям, которые мало времени проводят на свежем воздухе. Улучшает способность к обучению и обладает иммуномодулирующим действием</p>
+                    </li>
+                    <li class="recommendations__text-wrapper">
+                        <h3 class="recommendations__text-subtitle">My #1st Calcium</h3>
+                        <p class="recommendations__text-description">Кальций один из наиболее важных витаминов для растущего организма. Он необходим Вашему ребенку для крепких зубов и ногтей, а также для формирования прочного и здорового костного скелета</p>
+                    </li>
+                    <li class="recommendations__text-wrapper">
+                        <h3 class="recommendations__text-subtitle">
+                            My #1st Vitamins
+                        </h3>
+                        <p class="recommendations__text-description">
+                            Сбалансированный комплекс витаминов, который содержит 13 важнейших витаминов для гармоничного развития ребенка.
+                        </p>
+                    </li>
+                    <li class="recommendations__text-wrapper">
+                        <h3 class="recommendations__text-subtitle">My #1st Omega3</h3>
+                        <p class="recommendations__text-description">Для укрепления иммунитета, повышения умственных способностей, защиты зрения и правильного формирования костей и зубов.</p>
+                    </li>
+                </ul>
+            <img class="recommendations-pear" src="./../img/pear.svg" alt="герой-груша">
+    </div>
+</section>
+			<section class="present">
+    <img class="present-background" src="./../img/present-background.png" alt="блок">
+    <div class="container">
+            <div class="present__content">
+                <img class="present__content-img" src="./../img/coloring.svg" alt="раскраска">
+                <div class="present__content-text">
+                    <h2 class="present__content-title">Книжка-раскраска в подарок</h2>
+                    <p class="present__content-description">Чтобы ребенок не отставал в развитии, Вы должны постоянно придумывать новые игры. Особенно важно воспитать в нем усидчивость и умение сосредоточиться.
+                    Раскраски прекрасно решают эту задачу.
+                    Мы дарим детскую книжку-раскраску при покупке любого из товаров Optimeal Kids в магазинах Детский мир</p>
+                    <b class="present__content-details">Подробности акции уточняйте у официального
+                    дистрибьютора Optimeal kids</b>
+                    <a class="present__content-link" href="https://www.detmir.ru/search/results/?qt=optimeal%20kids&searchType=common&searchMode=common" ><img src="./../img/childsworld.svg" alt="логотип магазина Детский мир"></a>
+            </div>
+            </div>
+                
+        </div>
+</section>
+			
 		</main>
 		<footer class="footer">
 	<div class="container">
-		<h2>Footer</h2>
+		<h2 class="visually-hidden">Контакты</h2>
+		<div class="footer__form">
+			<p class="footer__form-title">Связаться с нами</p>
+			<ul class="footer__form-list">
+			<li class="footer__form-item">
+				<label for="user-name" class="visually-hidden">Имя</label>
+				<input class="footer__form-input" id="user-name" placeholder="Имя">
+			</li>
+			<li class="footer__form-item">
+				<label for="user-phone" type="text" class="visually-hidden">Телефон</label>
+				<input class="footer__form-input" id="user-phone" type="text" placeholder="Телефон" >
+			</li>
+			
+			</ul>
+			<button class="button footer__form-button"><img src="./../img/button.svg"><p class="button-text">Отправить</p></button>
+		</div>
+		<p class="footer-warning">Не является лекарственным средством</p>
+		<hr class="footer-warning-border" />
+		<div class="footer__contacts">
+			<div class="footer__contacts-item">
+				<h3 class="footer__contacts-item-title">Производитель</h3>
+				<p class="footer__contacts-item-description"><i>ООО «ЭНЕРГИЯ ДВИЖЕНИЯ» </i>
+					443080, Самарская обл., г. Самара, 
+					пр-кт Карла Маркса, д. 190, оф. 507</p>
+			</div>
+			<div class="footer__contacts-item">
+				<h3 class="footer__contacts-item-title">Контакты</h3>
+				<p class="footer__contacts-item-description">8 (846) 225-32-02 <i>zakaz@optimeal.pro
+					www.optimeal.pro</i></p>
+			</div>
+			<div class="footer__contacts-social">
+				<ul class="social-icons">
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://www.instagram.com/"><img class="social-icons-img" src="./../img/icons/instagramm.svg" alt="инстаграм"></a></li>
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://vk.com/"><img class="social-icons-img" src="./../img/icons/vk.svg" alt="вконтакте"></a></li>
+    <li class="social-icons-wrapper"><a class="social-icons-link" href="https://www.whatsapp.com/"><img class="social-icons-img" src="./../img/icons/whatsapp.svg" alt="what`s app"></a></li>
+  </ul>
+				<img class="footer__contacts-social-logo" src="./../img/footer-logo.svg" alt="логотип">
+			</div>
+		</div>
+		
 	</div>
+	<img class="footer-fish-yellow" src="./../img/yellow-fish.svg" alt="желтая рыбка">
+	<img class="footer-fish-orrange" src="./../img/orrange-fish.svg" alt="оранжевая рыбка">
+	<img class="footer-bubbles" src="./../img/bubbles.svg" alt="пузыри">
 </footer>
 
 		<script src="./js/index.bundle.js"></script>
