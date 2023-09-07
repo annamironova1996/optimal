@@ -10,6 +10,7 @@
 		align-items: center;
 	}
 	&__nav {
+		z-index: 3;
 		&-wrapper {	
 			display: flex;
 			flex-direction: row;
@@ -23,7 +24,7 @@
 		}
 		&-link:hover {
 			border-radius: 30px;
-			border: 2px solid var(--White, #FFF);
+			border: 2px solid #FFF;
 		}
 	}
 	

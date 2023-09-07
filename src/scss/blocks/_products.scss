@@ -1,13 +1,18 @@
 .products {
-    background-image: url('./../img/products-background.svg');
+    background-image: url('./../img/products-bg.svg');
     background-repeat: no-repeat;
-    background-size: contain;
     background-color: #FFEBDA;
+    background-size: cover;
+    background-position: 0 0;
     color: #D07CC6;
-    padding-top: 280px;
-    min-height: 2000px;
+    padding-top: 100px;
+    min-height: 900px;
     &-wrapper{
-        margin: 0 auto;
+        margin: 140px auto;
+        position: absolute;
+        top:135px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 90%;
         display: flex;
         justify-content: center;
@@ -16,88 +21,9 @@
     &-cards{
         margin-top: 164px;
     }
-    &__card{
-        position:relative;
-        &-wrapper{
-            position: absolute;
-            top:0;
-            left: 530px;
-        }
-        &-title {
-            color: #FF5F4E;
-            margin-top: 57px;
-            font-size: 52px;
-            font-weight: 800;
-            &_red{
-                background-color:  #FF5F4E;
-                color: #fff; 
-                border-radius: 30px;
-            }
-        }
-        &-buttons{
-            font-size: 24px;
-            font-weight: 800;
-        }
-        &-description{
-            display: none;
-            &-list{
-                margin-top: 35px;
-                display: flex;
-                flex-direction: column;
-                row-gap: 10px;
-            }
-        }
-        &-properties{
-            width: 80%;
-            &-specification{
-                margin-top: 10px;
-            }
-            &-offer{
-                margin-top: 28px;
-                margin-bottom: 27px;
-                display: flex;
-                column-gap: 8px;
-                padding: 17px;
-                border-radius: 30px;
-                border: 2px solid  rgba(208, 124, 198, 0.3);
-                font-size: 52px;
-                font-weight: 800;
-                &-2{
-                    font-size: 24px;
-                }
-            }
-        }
-        &-cloud-1{
-            position: absolute;
-            top:430px;
-            animation-name: cloud-1;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-        &-cloud-2{
-            position: absolute;
-            top: 0px;
-            animation-name: cloud-2;
-            animation-duration: 3s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
-        }
-        &-vitamin{
-            position: absolute;
-            width: 38%;
-            left: 37px;
-            animation-name: vitamin;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-    }
     &__item{
         position: relative;
+
         &-img {
             width: 70%;
             position: relative;
