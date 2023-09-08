@@ -1,26 +1,26 @@
 <section class="cards"> 
     <div class="container">
-    <div class="cards-slider swiper tabs-wrapper" id="slider">
-        <div class="products-cards swiper-wrapper tabs-content">
-            <div class="cards__item swiper-slide tabs">
+    <div class="cards-slider swiper " >
+        <div class="products-cards swiper-wrapper ">
+            <div class="cards__item swiper-slide">
                 <img class="cards__item-background" src="./../img/product-card.svg" alt="карточка">
                 <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="облако">
                 <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="облако">
                 <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
                 <div class="cards__item-wrapper">
                     <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Calcium</h2>
-                    <div class="cards__item-buttons tabs__item">
-                        <a href="#tab_01" data-btn="decription" class="cards__item-description-button" >Описание продукта</a>
-                        <a href="#tab_02" data-btn="decription" class="cards__item-properties-button" >Свойства</a>
+                    <div class="cards__item-buttons tabs-triggers">
+                        <a href="#tab-1" class="cards__item-description-button tabs-triggers__item" >Описание продукта</a>
+                        <a href="#tab-2" class="cards__item-properties-button tabs-triggers__item" >Свойства</a>
                     </div>
-                    <div class="tabs__body">
-                        <div class="cards__item-description tabs__block" id="tab_01" >
-                            <p class="cards__item-description-text">
+                    <div class="tabs-content">
+                        <div id="tab-1" class="cards__item-description tabs-content__item" >
+                            <p class="cards__item-description-text ">
                                 Кальций-основополагающий строительный материал для костной ткани. КОСТИ СОСТОЯТ ИЗ КАЛЬЦИЯ БОЛЕЕ ЧЕМ НА 90%. По праву является одним из наиболее важных витаминов для растущего организма. Крепкие зубы и ногти, формирование прочного и здорового костного скелета - территория ответственности "My #1st Calciun" от OptiMeal KIDS.
                             </p>
                             
                         </div>
-                        <div class="cards__item-properties tabs__block" id="tab_02">
+                        <div id="tab-2" class="cards__item-properties tabs-content__item">
                             <p class="cards__item-properties-form"><b>Форма выпуска:</b> мармеладные пастилки массой 3,4г.</p>
                             <p class="cards__item-properties-recommendations"><b> Рекомендации по применению: </b>детям старше 3-х лет принимать по 2 мармеладные пастилки 1 раз в день.</p>
                             <ul class="cards__item-properties-list">
@@ -33,28 +33,7 @@
                     </div>
                     <p class="cards__item-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
                     
-                    <!-- <div class="cards__item-description">
-                        <p class="cards__item-description-form"><b>Форма выпуска:</b> мармеладные пастилки массой 3,4 г.</p>
-                        <p class="cards__item-description-recommendations"><b>Рекомендации по применению:</b> детям старше 3х лет по 1 мармеладной
-                        пастилке 1 раз в день.
-                        </p>
-                        <ul class="cards__item-description-list">
-                            <li class="cards__item-description-item">Для детей и родителей</li>
-                            <li class="cards__item-description-item">Вкусы на основе соков</li>
-                            <li class="cards__item-description-item">Без искусственных красителей</li>
-                            <li class="cards__item-description-item">Месячный курс</li>
-                        </ul>
-                    </div>
-                    <div class="cards__item-properties">
-                        <p class="cards__item-properties-specification">Биологические функции Витамина D3. Согласно многочисленным исследованиям, витамин D3 положительно влияет на целый ряд функций организма, среди которых необходимо выделить:
-                        иммуномодулирующее действие, Укрепление костной ткани, Модуляция клеточного роста Улучшение способности к обучению.</p>
-                        <div class="cards__item-properties-offer">
-                            <b class="cards__item-properties-offer-1">12+1</b>
-                            <p class="cards__item-properties-offer-2">мультивитаминный
-                            комплекс</p>
-                        </div>
-                        <p class="cards__item-properties-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
-                    </div> -->
+                
                     <button class="cards__item-button button">
                         <img class="button-img" src="./../img/button.svg" alt="кнопка">
                         <span class="button-text">Где купить?</span>
@@ -68,26 +47,28 @@
                 <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
                 <div class="cards__item-wrapper">
                     <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Vitamins</h2>
-                    <div class="cards__item-buttons ">
-                        <button class="cards__item-description-button" >Описание продукта</button>
-                        <button class="cards__item-properties-button ">Свойства</button>
+                    <div class="cards__item-buttons tabs-triggers">
+                        <a href="#tab-3" class="cards__item-description-button tabs-triggers__item" >Описание продукта</a>
+                        <a href="#tab-4" class="cards__item-properties-button tabs-triggers__item" >Свойства</a>
                     </div>
-                    
-                        <div class="cards__item-description"  >
-                        <p class="cards__item-description-text ">
-                            Данный витаминный комплекс включает в себя 13 важнейших витаминов для гармоничного развития ребенка. Всего одна мармеладная пастилка в день окажет всестороннюю поддержку детскому организму. Прием комплексных витаминов всегда к месту, но, особенно актуально в периоды межсезонья, разгула ОРЗ и ОРВИ. Благодаря натуральному вкусу яблока и банана (без синтетических ароматизаторов и красителей) Ваш ребенок будет с нетерпением ждать очередного приема витаминов! 
-                        </p>
+                    <div class="tabs-content">
+                        <div id="tab-3" class="cards__item-description tabs-content__item tabs-content__item--active"  >
+                            <p id="tab-4" class="cards__item-description-text ">
+                                Данный витаминный комплекс включает в себя 13 важнейших витаминов для гармоничного развития ребенка. Всего одна мармеладная пастилка в день окажет всестороннюю поддержку детскому организму. Прием комплексных витаминов всегда к месту, но, особенно актуально в периоды межсезонья, разгула ОРЗ и ОРВИ. Благодаря натуральному вкусу яблока и банана (без синтетических ароматизаторов и красителей) Ваш ребенок будет с нетерпением ждать очередного приема витаминов! 
+                            </p>
+                        </div>
+                        <div class="cards__item-properties tabs-content__item"  >
+                            <p class="cards__item-properties-form"><b>Форма выпуска:</b>мармеладные пастилки массой 3,4г.</p>
+                            <p class="cards__item-properties-recommendations"><b>Рекомендации по применению:</b>детям старше 3-х лет принимать по 1 мармеладные пастилке 1 раз в день.</p>
+                            <ul class="cards__item-properties-list">
+                                <li class="cards__item-properties-list-item"><b>Для детей и родителей</b></li>
+                                <li class="cards__item-properties-list-item"><b>Без искусственных красителей</b></li>
+                                <li class="cards__item-properties-list-item"><b>Вкусы на основе соков</b></li>
+                                <li class="cards__item-properties-list-item"><b>Месячный курс</b></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="cards__item-properties "  >
-                        <p class="cards__item-properties-form"><b>Форма выпуска:</b>мармеладные пастилки массой 3,4г.</p>
-                        <p class="cards__item-properties-recommendations"><b>Рекомендации по применению:</b>детям старше 3-х лет принимать по 1 мармеладные пастилке 1 раз в день.</p>
-                        <ul class="cards__item-properties-list">
-                            <li class="cards__item-properties-list-item"><b>Для детей и родителей</b></li>
-                            <li class="cards__item-properties-list-item"><b>Без искусственных красителей</b></li>
-                            <li class="cards__item-properties-list-item"><b>Вкусы на основе соков</b></li>
-                            <li class="cards__item-properties-list-item"><b>Месячный курс</b></li>
-                        </ul>
-                    </div>
+                        
                   
                     
                     <div class="cards__item-offer">
@@ -114,7 +95,7 @@
                         <button class="cards__item-description-button" >Описание продукта</button>
                         <button class="cards__item-properties-button" >Свойства</button>
                     </div>
-                    <div class="cards__item-description " >
+                    <div class="cards__item-description tabs-content__item--active" >
                         <p class="cards__item-description-text">
                             Биологические функции Витамина D3. Согласно многочисленным исследованиям, витамин D3 положительно влияет на целый ряд функций организма, среди которых необходимо выделить: иммуномодулирующее действие, Укрепление клеточного роста, Улучшение способности к обучению.
                         </p>

@@ -9,13 +9,13 @@
     
     &-pear{
         position: absolute;
-        left: 626px;
-        top: 0;
-        width: 46%;
+        left: 715px;
+        top:0;
+        width: 40%;
     }
     
     &__text{
-        width: 60%;
+        width: 51%;
         font-size: 18px;
         font-weight: 400;
         &-description {
@@ -36,6 +36,80 @@
         &-subtitle {
             font-size: 26px;
             font-weight: 800;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .recommendations {
+        &-pear {
+            top: 21px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .recommendations {
+        &__text{
+            width: 48%;
+            &-title {
+                font-size: 29px;
+            }
+            &-description {
+                font-size: 14px;
+            }
+        }
+        &-pear {
+            left:615px;
+        }
+        
+    }
+}
+@media only screen and (max-width: 991px) {
+    .recommendations {
+        &__text{
+          width: 52%;
+            
+        }
+        &-pear{
+            top:135px;
+            left: 515px;
+        }
+        
+        
+    }
+}
+@media only screen and (max-width: 767px) {
+    .recommendations {
+        &-pear {
+            display: none;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .recommendations{
+        &__text{
+            width: 60%;
+            &-title {
+                font-size: 25px;
+            }
+            &-subtitle {
+                font-size: 20px;
+            }
+            &-description {
+                font-size: 11px;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .recommendations{
+        &__text{
+            width:100%
         }
     }
 }

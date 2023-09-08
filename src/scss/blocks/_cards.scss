@@ -133,12 +133,11 @@
 
 }
 
-.tabs__block{
+.tabs-content__item{
     display: none;
-    position: relative;
 }
 
-.tabs__block:target{
+.tabs-content__item--active {
     display: block;
 }
 

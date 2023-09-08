@@ -1,5 +1,27 @@
+.anim-footer-title {
+	transform: translate(-300px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.3s;
+}
+.anim-footer-name {
+	transform: translate(-300px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.6s;
+}
+.anim-footer-phone {
+	transform: translate(-300px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.8s;
+}
+.anim-footer-button {
+	transform: translate(-300px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0.9s;
+}
+
 .footer {
 	background-image: url('./../img/footer-back.svg');
+	background-color: red;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -10,7 +32,7 @@
 
 	&-fish-yellow {
 	position: absolute;
-	right: 250px;
+	right: 168px;
 	width: 18%;
 	z-index: 1;
 	animation-name: yellow-fish;
@@ -64,6 +86,7 @@
 		font-weight: 400;
 		margin-top: 154px;
 		text-transform: uppercase;
+		text-align: center;
 		&-border{
 			height: 2px;
 			background-color:#fff;
@@ -72,12 +95,13 @@
 	&__contacts {
 		margin-top: 18px;
 		display: flex;
+		justify-content: space-between;
 		column-gap: 10px;
 		&-item{
 			display: flex;
 			flex-direction: column;
 			row-gap:10px ;
-			width: 60%;
+			width: 42%;
 			&:nth-child(2){
 				width: 20%;
 			}
@@ -92,8 +116,10 @@
 			
 		}
 		&-social{
-			text-align: center;
-			width: 18%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 23%;
 			&-logo{
 				margin-top: 10px;
 			}
@@ -125,3 +151,173 @@
     }
     }
 	
+
+@media only screen and (max-width: 1600px) {
+	.footer{
+		&-fish-orrange {
+			right:468px;    
+		}
+		&-warning {
+			font-size: 50px;
+			}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.footer{
+		&-fish-yellow {
+			width: 23%;  
+			right: 50px;
+		}
+		&-warning{
+			font-size: 42px;
+		}
+		&-fish-orrange {
+			left: 550px;  
+			width: 24%;  
+		}
+	}
+	@keyframes orrange-fish {
+		0% {
+			top: 404px;
+		}
+		
+		100% {
+			top: 420px;
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 991px) {
+	.footer{
+		&-fish-yellow {
+			width: 21%;
+			right: 23px;
+		}
+		&-fish-orrange {
+			width: 28%;
+			left: 11px; 
+			animation-duration: 4s;
+		}
+		&__form {
+			width:100%;
+		}
+		&-warning {
+			font-size: 32px;
+			margin-top: 197px;
+		}
+		&__contacts {
+			&-item{
+				width: 43%;
+			}
+			&-social {
+				width: 31%;
+			}
+		}
+			
+	}
+	@keyframes yellow-fish {
+		0% {
+			top: 153px;
+		}
+		70% {
+			top: 136px;
+		}
+		100% {
+			top: 146px;
+		}
+	}
+	@keyframes orrange-fish {
+		0% {
+			top: 532px;
+		}
+		100% {
+			top: 553px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer {
+		&-warning{
+			font-size: 23px;
+			margin-top: 90px;
+		}
+		&__contacts {
+			column-gap: 27px;
+			flex-wrap: wrap;
+			justify-content: center;
+			row-gap: 18px;
+			&-item{
+				width: 55%;
+				
+			}
+			&-item:nth-child(2){
+				width: 30%;
+			}
+			&-social{
+				width: 40%;
+				font-size: 18px;
+			}
+			
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.footer {
+		padding-top: 204px;
+		&__form{
+			&-title {
+				font-size: 26px;
+			}
+			&-input {
+				width: 243px;
+				height: 57px;
+			}
+			&-button{
+				width: 63%;
+				
+			}
+		}
+		&-fish-yellow {
+			right: 6px;
+			width:34%;
+		}
+		&-fish-orrange {
+			width: 37%;
+			left: 26px;
+		}
+		&-warning{
+			font-size: 14px;
+			margin-top: 266px;
+		}
+		&__contacts{
+			flex-direction: column;
+			&-item {
+				&-title {
+				font-size: 16px;
+				}
+				&-description{
+					font-size: 12px;
+				}
+			}
+			&-social {
+				width: 100%
+			}
+			
+		}
+		@keyframes yellow-fish{
+			0% {
+				top: 490px;
+			}
+			70% {
+				top: 500px;
+			}
+			100% {
+				top: 495px;
+			}
+		}
+	}
+}

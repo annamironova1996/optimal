@@ -1,4 +1,4 @@
-const animItems = document.querySelectorAll('.anim-new-1 , .anim-new-2 , .anim-new-3, .anim-present-img, .anim-present-title, .anim-present-description, .anim-present-details, .anim-present-link' )
+const animItems = document.querySelectorAll('.anim-new-1 , .anim-new-2 , .anim-new-3, .anim-present-img, .anim-present-title, .anim-present-description, .anim-present-details, .anim-present-link, .anim-footer-title, .anim-footer-name, .anim-footer-phone, .anim-footer-button' )
 
 if (animItems.length > 0) {
     function animOnScroll() {
