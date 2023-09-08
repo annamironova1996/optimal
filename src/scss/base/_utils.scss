@@ -18,3 +18,8 @@
 .no-scroll {
 	overflow-y: hidden;
 }
+
+.active {
+    transform: translate(0);
+    opacity: 1;
+}

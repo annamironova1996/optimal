@@ -10,23 +10,25 @@
     &-wrapper{
         margin: 140px auto;
         position: absolute;
-        top:135px;
+        top:82px;
         left: 50%;
         transform: translateX(-50%);
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        text-align: center;
     }
     &-cards{
-        margin-top: 164px;
+        margin-top: 72px;
     }
     &__item{
         position: relative;
-
+        width: 25%;
         &-img {
-            width: 70%;
+            width: 80%;
             position: relative;
+            cursor: pointer;
         }
         &-banana{
             display: none;
@@ -44,28 +46,29 @@
 @keyframes cloud-1{
 
     0%{
-        left:-100px;
+        left:0px;
     }
     100%{
-    left: -120px;
+    left: 20px;
     }
     }
     
 @keyframes cloud-2{
 
     0%{
-    right: 470px;
+    left: 150px;
     }
     100%{
-    right: 440px;
+    left: 170px;
     }
     }
 
 @keyframes vitamin {
     0%{
-        top: 70px;
+        top: 40px;
     }
     100%{
-        top: 100px;
+        top: 70px;
     }
 }
+

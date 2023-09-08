@@ -1,19 +1,39 @@
 <section class="cards"> 
     <div class="container">
-    <div class="slider" id="slider">
-        <div class="products-cards">
-            <div class="cards__item">
+    <div class="cards-slider swiper tabs-wrapper" id="slider">
+        <div class="products-cards swiper-wrapper tabs-content">
+            <div class="cards__item swiper-slide tabs">
                 <img class="cards__item-background" src="./../img/product-card.svg" alt="карточка">
-                <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="">
-                <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="">
+                <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="облако">
+                <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="облако">
                 <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
                 <div class="cards__item-wrapper">
-                    <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Vitamins</h2>
-                    <div class="cards__item-buttons">
-                        <button class="cards__item-description-button">Описание продукта</button>
-                        <button class="cards__item-properties-button">Свойства</button>
+                    <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Calcium</h2>
+                    <div class="cards__item-buttons tabs__item">
+                        <a href="#tab_01" data-btn="decription" class="cards__item-description-button" >Описание продукта</a>
+                        <a href="#tab_02" data-btn="decription" class="cards__item-properties-button" >Свойства</a>
                     </div>
-                    <div class="cards__item-description">
+                    <div class="tabs__body">
+                        <div class="cards__item-description tabs__block" id="tab_01" >
+                            <p class="cards__item-description-text">
+                                Кальций-основополагающий строительный материал для костной ткани. КОСТИ СОСТОЯТ ИЗ КАЛЬЦИЯ БОЛЕЕ ЧЕМ НА 90%. По праву является одним из наиболее важных витаминов для растущего организма. Крепкие зубы и ногти, формирование прочного и здорового костного скелета - территория ответственности "My #1st Calciun" от OptiMeal KIDS.
+                            </p>
+                            
+                        </div>
+                        <div class="cards__item-properties tabs__block" id="tab_02">
+                            <p class="cards__item-properties-form"><b>Форма выпуска:</b> мармеладные пастилки массой 3,4г.</p>
+                            <p class="cards__item-properties-recommendations"><b> Рекомендации по применению: </b>детям старше 3-х лет принимать по 2 мармеладные пастилки 1 раз в день.</p>
+                            <ul class="cards__item-properties-list">
+                                <li class="cards__item-properties-list-item"><b>Без искусственных красителей</b></li>
+                                <li class="cards__item-properties-list-item"><b>Фруктовые соки</b></li>
+                                <li class="cards__item-properties-list-item"><b>Здоровые зубы</b></li>
+                                <li class="cards__item-properties-list-item"><b>Крепкие кости</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="cards__item-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
+                    
+                    <!-- <div class="cards__item-description">
                         <p class="cards__item-description-form"><b>Форма выпуска:</b> мармеладные пастилки массой 3,4 г.</p>
                         <p class="cards__item-description-recommendations"><b>Рекомендации по применению:</b> детям старше 3х лет по 1 мармеладной
                         пастилке 1 раз в день.
@@ -34,16 +54,133 @@
                             комплекс</p>
                         </div>
                         <p class="cards__item-properties-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
-                    </div>
-                    <button class="button">
+                    </div> -->
+                    <button class="cards__item-button button">
                         <img class="button-img" src="./../img/button.svg" alt="кнопка">
                         <span class="button-text">Где купить?</span>
                     </button>
                 </div>
             </div>
+            <div class="cards__item swiper-slide ">
+                <img class="cards__item-background" src="./../img/product-card.svg" alt="карточка">
+                <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="облако">
+                <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="облако">
+                <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
+                <div class="cards__item-wrapper">
+                    <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Vitamins</h2>
+                    <div class="cards__item-buttons ">
+                        <button class="cards__item-description-button" >Описание продукта</button>
+                        <button class="cards__item-properties-button ">Свойства</button>
+                    </div>
+                    
+                        <div class="cards__item-description"  >
+                        <p class="cards__item-description-text ">
+                            Данный витаминный комплекс включает в себя 13 важнейших витаминов для гармоничного развития ребенка. Всего одна мармеладная пастилка в день окажет всестороннюю поддержку детскому организму. Прием комплексных витаминов всегда к месту, но, особенно актуально в периоды межсезонья, разгула ОРЗ и ОРВИ. Благодаря натуральному вкусу яблока и банана (без синтетических ароматизаторов и красителей) Ваш ребенок будет с нетерпением ждать очередного приема витаминов! 
+                        </p>
+                    </div>
+                    <div class="cards__item-properties "  >
+                        <p class="cards__item-properties-form"><b>Форма выпуска:</b>мармеладные пастилки массой 3,4г.</p>
+                        <p class="cards__item-properties-recommendations"><b>Рекомендации по применению:</b>детям старше 3-х лет принимать по 1 мармеладные пастилке 1 раз в день.</p>
+                        <ul class="cards__item-properties-list">
+                            <li class="cards__item-properties-list-item"><b>Для детей и родителей</b></li>
+                            <li class="cards__item-properties-list-item"><b>Без искусственных красителей</b></li>
+                            <li class="cards__item-properties-list-item"><b>Вкусы на основе соков</b></li>
+                            <li class="cards__item-properties-list-item"><b>Месячный курс</b></li>
+                        </ul>
+                    </div>
+                  
+                    
+                    <div class="cards__item-offer">
+                        <b class="cards__item-offer-1">12+1</b>
+                        <p class="cards__item-offer-2">мультивитаминный
+                        комплекс</p>
+                    </div>
+                    <p class="cards__item-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
+                    
+                    <button class="cards__item-button button">
+                        <img class="button-img" src="./../img/button.svg" alt="кнопка">
+                        <span class="button-text">Где купить?</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards__item swiper-slide ">
+                <img class="cards__item-background" src="./../img/product-card.svg" alt="карточка">
+                <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="облако">
+                <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="облако">
+                <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
+                <div class="cards__item-wrapper">
+                    <h2 class="cards__item-title">My #1st Vita<span class="cards__item-title cards__item-title_red">D3</span></h2>
+                    <div class="cards__item-buttons">
+                        <button class="cards__item-description-button" >Описание продукта</button>
+                        <button class="cards__item-properties-button" >Свойства</button>
+                    </div>
+                    <div class="cards__item-description " >
+                        <p class="cards__item-description-text">
+                            Биологические функции Витамина D3. Согласно многочисленным исследованиям, витамин D3 положительно влияет на целый ряд функций организма, среди которых необходимо выделить: иммуномодулирующее действие, Укрепление клеточного роста, Улучшение способности к обучению.
+                        </p>
+                    </div>
+                    <div class="cards__item-properties "   >
+                        <p class="cards__item-properties-form"><b>Форма выпуска:</b>банка 120 капсул по 500 мг.</p>
+                        <p class="cards__item-properties-recommendations"><b>Рекомендации по применению:</b>взрослым по 1 капсуле 1 раз в день во время приема пищи. Продолжительность приема - 1 месяц.</p>
+                        <ul class="cards__item-properties-list">
+                            <li class="cards__item-properties-list-item"><b>Иммуномодулирующее действие</b></li>
+                            <li class="cards__item-properties-list-item"><b>Укрепление костной ткани</b></li>
+                            <li class="cards__item-properties-list-item"><b>Модуляция клеточного роста</b></li>
+                            <li class="cards__item-properties-list-item"><b>Улучшение способности к обучению</b></li>
+                        </ul>
+                    </div>
+                    <div class="cards__item-offer">
+                        идеальная расстворимость
+                    </div>
+                    <p class="cards__item-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
+                    
+                    <button class="cards__item-button button">
+                        <img class="button-img" src="./../img/button.svg" alt="кнопка">
+                        <span class="button-text">Где купить?</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards__item swiper-slide ">
+                <img class="cards__item-background" src="./../img/product-card.svg" alt="карточка">
+                <img class="cards__item-cloud-2" src="./../img/cloud-2.svg" alt="облако">
+                <img class="cards__item-cloud-1" src="./../img/cloud-1.svg" alt="облако">
+                <img class="cards__item-vitamin" src="./../img/vitamins-1.png" alt="витамины My #1st Vitamins">
+                <div class="cards__item-wrapper">
+                    <h2 class="cards__item-title">My <span class="cards__item-title cards__item-title_red">#1st</span> Omega3</h2>
+                    <div class="cards__item-buttons">
+                        <button class="cards__item-description-button">Описание продукта</button>
+                        <button class="cards__item-properties-button" >Свойства</button>
+                    </div>
+                    <div class="cards__item-description " >
+                        <p class="cards__item-description-text">
+                            Самая вкусная форма рыбьего жира из всех ныне представленных! Наша "Омега 3" помимо оптимального содержания полиненасыщенных жирных кислот, обогащена витаминами : А, Е, Д3, что несёт потребителю большую биологическую ценность. Стойкость иммунитета, эластичность и гладкость кожи, память и внимательность, зрение и тонус - это лишь малая часть положительных эффектов, достигаемых благодаря приему "My #1st Omega3" от OptiMeal KIDS 
+                        </p>
+                    </div>
+                    <div class="cards__item-properties "  >
+                        <p class="cards__item-properties-form"><b>Форма выпуска:</b>банка 120 капсул по 500 мг.</p>
+                        <p class="cards__item-properties-recommendations"><b>Рекомендации по применению:</b>детям с 3 до 7 лет по 3 капсулы в день во время еды; детям старше 7 лет по 4 капсулы в день во время еды. Продолжительность приема - 1 месяц. При необходимости прием можно повторить. Возможны повторные приемы в течение года.</p>
+                        <ul class="cards__item-properties-list">
+                            <li class="cards__item-properties-list-item"><b>Иммунитет</b></li>
+                            <li class="cards__item-properties-list-item"><b>Улучшает зрение</b></li>
+                            <li class="cards__item-properties-list-item"><b>Память</b></li>
+                            <li class="cards__item-properties-list-item"><b>Внимательность</b></li>
+                        </ul>
+                    </div>
+                    
+                    <p class="cards__item-taste"><b>Вкус:</b> банан-яблоко, манго-клубника, клубника-тоффифи</p>
+                    
+                    <button class="cards__item-button button">
+                        <img class="button-img" src="./../img/button.svg" alt="кнопка">
+                        <span class="button-text">Где купить?</span>
+                    </button>
+                </div>
+            </div>
+           
         </div>
+        
+        <button class="cards-button-left"><img src="./../img/button-left.svg" alt="кнопка влево"></button>
+        <button class="cards-button-right"><img src="./../img/button-right.svg" alt="кнопка влево"></button>
+        <div class="swiper-scrollbar"></div>
     </div>
-    <button class="cards-button-left" id="btnPrev"><img src="./../img/button-left.svg" alt="кнопка влево"></button>
-    <button class="cards-button-right" id="btnPrev"><img src="./../img/button-right.svg" alt="кнопка влево"></button>
     </div>
 </section>

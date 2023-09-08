@@ -1,18 +1,17 @@
 .footer {
-	background-image: url('./../img/footer-background.svg');
+	background-image: url('./../img/footer-back.svg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	position: relative;
-	padding: 150px 0;
+	padding-top: 270px;
 	font-size: 32px;
-	min-height: 900px;
 	font-size: 16px;
 	font-weight: 400;
 
 	&-fish-yellow {
 	position: absolute;
-	right: 280px;
-	width: 20%;
+	right: 250px;
+	width: 18%;
 	z-index: 1;
 	animation-name: yellow-fish;
 	animation-duration: 4s;
@@ -23,8 +22,8 @@
 
 	&-fish-orrange {
 	position: absolute;
-    right: 580px;
-	width: 20%;
+    right: 540px;
+	width: 18%;
 	z-index: 1;
 	animation-name: orrange-fish;
 	animation-duration: 2s;
@@ -34,15 +33,15 @@
 	}
 	&-bubbles{
 		position: absolute;
-		right: 250px;
-		top: 160px;
+		right: 150px;
+		top: 190px;
 		z-index: 0;
 	}
 	&__form {
 		width: 44%;
 		text-align: center;
 		&-title {
-			font-size: 52px;
+			font-size: 50px;
 			font-weight: 800;
 		}
 		&-button {
@@ -61,7 +60,7 @@
 		
 	}
 	&-warning{
-		font-size: 46px;
+		font-size: 48px;
 		font-weight: 400;
 		margin-top: 154px;
 		text-transform: uppercase;
@@ -73,15 +72,24 @@
 	&__contacts {
 		margin-top: 18px;
 		display: flex;
+		column-gap: 10px;
 		&-item{
 			display: flex;
 			flex-direction: column;
 			row-gap:10px ;
-			width: 40%;
+			width: 60%;
+			&:nth-child(2){
+				width: 20%;
+			}
 			&-title {
 				font-size: 18px;
-				font-weight: 800;
+				font-weight: 600;
 			}
+			&-description{
+				font-weight: 300;
+				
+			}
+			
 		}
 		&-social{
 			text-align: center;
@@ -97,13 +105,13 @@
 @keyframes yellow-fish{
 
     0%{
-	top: 100px;
+	top: 200px;
     }
 	70% {
-		top: 140px;
+		top: 220px;
 	}
     100%{
-    top: 100px;
+    top: 210px;
     }
     }
     

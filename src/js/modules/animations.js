@@ -1,5 +1,5 @@
-const animItems = document.querySelectorAll('.anim-new-1 , .anim-new-2 , .anim-new-3' )
-console.log('hello')
+const animItems = document.querySelectorAll('.anim-new-1 , .anim-new-2 , .anim-new-3, .anim-present-img, .anim-present-title, .anim-present-description, .anim-present-details, .anim-present-link' )
+
 if (animItems.length > 0) {
     function animOnScroll() {
         window.addEventListener('scroll', animOnScroll);

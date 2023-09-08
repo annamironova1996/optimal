@@ -1,61 +1,59 @@
-const slider = document.querySelector('#slider')
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+ 
+let productsItem = document.querySelectorAll('.products__item');
 
-const sliderItems = Array.from(slider.children);
-
-const btnNext = document.querySelector('#btnNext')
-const btnPrev = document.querySelector('#btnPrev')
-
-
-
-sliderItems.forEach(function(slide, index){
-
-    if(index !== 0) slide.classList.add('hidden')
-
-    slide.dataset.index = index;
-
-    sliderItems[0].setAttribute('data-active', '')
-
-    slide.addEventListener('click', function(){
-        console.log('Next')
-        slide.classList.add('hidden')
-        slide.removeAttribute('data-active')
-
-        const nextSlideInsex = index + 1 === sliderItems.length ? 0 : index + 1
+let paginationItem = [];
 
 
-        const nextSlide = slider.querySelector(`[data-index="${nextSlideInsex}"]`)
-        nextSlide.classList.remove('hidden')
-        nextSlide.setAttribute('data-active', '')
-    })
-})
+productsItem.forEach(productItem => {
+    paginationItem.push(productItem.innerHTML);
+});
 
-btnNext.onClick = function() {
-    console.log('next')
-  showNextSlide('next')
 
-}
 
-btnPrev.onClick = function() {
-    console.log('prev')
-  showNextSlide('prev')
-}
 
-function showNextSlide(direction) {
-    const currentSlide = slider.querySelector('[data-active]')
-    const currentSlideIndex = +currentSlide.dataset.index;
-    
 
-    currentSlide.classList.add('hidden')
-    currentSlide.removeAttribute('data-active')
 
-    let nextSlideIndex;
-    if(direction === 'next') {
-        nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1
-    }else if (direction === 'prev') {
-        nextSlideIndex = currentSlideIndex  === 0 ? sliderItems.length - 1 : currentSlideIndex - 1
+
+const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+loop: true,
+
+
+
+pagination: {
+  el: '.products-wrapper',
+  clickable: true,
+  bulletActiveClass:'product-active-pagination',
+    renderBullet: function (index, className) {
+    return '<div class="products__item ' + className + '">' + (paginationItem[index]) + '</div>';
     }
 
-    const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`)
-    nextSlide.classList.remove('hidden')
-    nextSlide.setAttribute('data-active', '')
 }
+,
+
+
+navigation: {
+  nextEl: '.cards-button-right',
+  prevEl: '.cards-button-left',
+},
+
+observer: true,
+  observeParents: true,
+
+scrollbar: {
+  el: '.swiper-scrollbar',
+},
+});
+
+
+
+    
+
+
+
+
+
+ 

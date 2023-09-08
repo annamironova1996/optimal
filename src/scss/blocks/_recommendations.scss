@@ -1,41 +1,27 @@
 .recommendations {
-    padding-top: 20px;
+    padding-top: 77px;
+    padding-bottom: 70px;
     background-image: url('./../img/recommendations-bg.svg');
     background-color: #FFEBDA;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
-    font-size: 18px;
-    font-weight: 400;
-    min-height: 700px;
+    
     &-pear{
         position: absolute;
-        right: 160px;
-        top: 88px;
-        width: 36%;
+        left: 626px;
+        top: 0;
+        width: 46%;
     }
-    &__test{
-        &-title{
-            font-size: 52px;
-            font-weight: 800;
-        }
-        &-question{
-            font-size: 26px;
-            font-weight: 800;
-        }
-        &-answer {
-            &-input{
-                transform:scale(1.6);
-                opacity:0.9;
-                cursor:pointer;
-                transform: var(#D07CC6);
-            }
-        }
-    }
+    
     &__text{
         width: 60%;
         font-size: 18px;
         font-weight: 400;
+        &-description {
+            font-size: 18px;
+            font-weight: 300;
+        }
         &-title {
             font-size: 32px;
             font-weight: 800;
@@ -43,6 +29,9 @@
         }
         &-wrapper{
             margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
         }
         &-subtitle {
             font-size: 26px;

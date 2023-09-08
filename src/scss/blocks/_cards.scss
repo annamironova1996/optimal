@@ -1,0 +1,157 @@
+
+.cards {
+    background-color: #FFEBDA;
+    color: #D07CC6;
+    display: flow-root;
+    text-align: center;
+    &__item {   
+    position:relative;
+        &-background {
+            max-width: 93%;
+            left:40px
+        }
+        &-wrapper{
+            position: absolute;
+            top: 0;
+            left: 472px;
+            text-align: left;
+            padding: 50px;
+        }
+        &-title {
+            color: #FF5F4E;
+            font-size: 52px;
+            font-weight: 800;
+            margin-bottom: 7px;
+            &_red {
+                background-color:  #FF5F4E;
+                color: #fff; 
+                border-radius: 30px;
+                padding: 5px;
+            }
+        }
+        &-taste {
+            margin-top: 16px;
+        }
+        &-offer {
+            display: flex;
+            justify-content: center;
+            column-gap:7px;
+            border: 2px solid;
+            width: 88%;
+            padding: 15px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        
+        &-buttons{
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 20px;
+            font-size: 24px;
+            padding: 15px 0px;
+            }
+        &-description{
+            font-weight: 300;
+            margin-bottom: 40px;
+            width: 80%;
+            &-button{
+                font-weight: 600;
+            }
+            &-button:hover{
+                border-bottom: 3px solid;
+                
+            }
+            
+        }
+        &-properties{
+            width: 80%;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+            &-form{
+                &_bold{
+                    font-weight: 400px;
+                }
+            }
+            &-button {
+                font-weight: 600;
+            }
+            &-button:hover{
+                border-bottom: 3px solid;
+            }
+            &-list{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                &-item::before{
+                    content: url('./../img/check-list.svg')
+                }
+            }
+
+            
+        }
+        &-button {
+            margin-top: 10px;
+        }
+        &-cloud-1{
+            position: absolute;
+            top:430px;
+            animation-name: cloud-1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        &-cloud-2{
+            position: absolute;
+            top: 0px;
+            animation-name: cloud-2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        &-vitamin{
+            position: absolute;
+            width: 36%;
+            left: 80px;
+            animation-name: vitamin;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    
+            
+                 
+            
+        
+    }
+
+}
+
+.tabs__block{
+    display: none;
+    position: relative;
+}
+
+.tabs__block:target{
+    display: block;
+}
+
+.cards-button-left{
+    position: absolute;
+    bottom: 330px; 
+    left:0;
+    z-index: 5;
+}
+
+.cards-button-right{
+    position: absolute;
+    right: 0;
+    bottom: 330px;
+    z-index: 5;
+}
